@@ -1,0 +1,24 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - jshint > lodash:
+        patched: '2023-08-21T02:23:09.077Z'
+        id: SNYK-JS-LODASH-567746
+        path: jshint > lodash
+  'npm:minimatch:20160620':
+    - istanbul > fileset > glob > minimatch:
+        patched: '2023-08-21T02:23:09.077Z'
+        id: 'npm:minimatch:20160620'
+        path: istanbul > fileset > glob > minimatch
+  'npm:uglify-js:20151024':
+    - browserify > umd > ruglify > uglify-js:
+        patched: '2023-08-21T02:23:09.077Z'
+        id: 'npm:uglify-js:20151024'
+        path: browserify > umd > ruglify > uglify-js
+    - browserify > browser-pack > umd > ruglify > uglify-js:
+        patched: '2023-08-21T02:23:09.077Z'
+        id: 'npm:uglify-js:20151024'
+        path: browserify > browser-pack > umd > ruglify > uglify-js
